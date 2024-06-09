@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.pesquisa {
+    background-color: #f8f8f8;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Menu input{
+    display: flex;
+    position: absolute;
+    top: 65px;
+    left: 950px;
+}
+
+#search-bar {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+
+
+.Menu {
+    background-color: #333;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 140px;
+}
+
+
+
+
+#titulo1 {
+    color: white;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.subtitulo {
+    color:rgb(253, 254, 255);
+    font-size: large;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    margin-top: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilo para a imagem logo após o rodapé */
+.imagem-apos-rodape {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+    margin: 0em 0; /* Adiciona espaçamento ao redor da imagem */
+}
+
+.imagem-apos-rodape img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.imagem-apos-rodape-feedback {
+    text-align: center; /* Centraliza a imagem horizontalmente */
+    margin: 0em 0; /* Adiciona espaçamento ao redor da imagem */
+}
+
+.imagem-apos-rodape-feedback img {
+    width: 1445;
+    aspect-ratio: auto 1145 / 210; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: 280px;
+    max-width: 100%; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o contêiner de produtos */
+.produto-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap; /*quando não caber mais elementos na linha ele vai para proxima*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para o produto */
+.produto {
+    display: flex;
+    flex-direction:column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 200px; /* Limita a largura máxima do produto */
+    margin:  1em;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produto h3 {
+    margin: 0.5em 0;
+}
+
+.produto .preco {
+    color: #B12704;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.produto .descricao {
+    color: #555;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+/* Remover estilos de posicionamento absoluto */
+#posicionamento,
+#posicionamento2,
+#posicionamento3,
+#posicionamento4 {
+    position:static; /* Reseta o posicionamento para estático */
+    top:auto;
+    left: auto;
+}
+
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
